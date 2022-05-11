@@ -54,7 +54,7 @@
 		<id>1000000</id>
 		<revision>
 			<id>1000000</id>
-			<timestamp>2022-05-11T19-44-57Z</timestamp>
+			<timestamp>2022-05-11T19-56-42Z</timestamp>
 			<contributor>
 				<username>Yallamahanth</username>
 				<id>18852</id>
@@ -100,7 +100,7 @@
 		<id>1000001</id>
 		<revision>
 			<id>1000001</id>
-			<timestamp>2022-05-11T19-44-57Z</timestamp>
+			<timestamp>2022-05-11T19-56-42Z</timestamp>
 			<contributor>
 				<username>Yallamahanth</username>
 				<id>18852</id>
@@ -151,7 +151,7 @@
 		<id>1000002</id>
 		<revision>
 			<id>1000002</id>
-			<timestamp>2022-05-11T19-44-57Z</timestamp>
+			<timestamp>2022-05-11T19-56-42Z</timestamp>
 			<contributor>
 				<username>Yallamahanth</username>
 				<id>18852</id>
@@ -159,13 +159,13 @@
 			<comment>xmlpage created</comment>
 			<model>wikitext</model>
 			<format>text/x-wiki</format>
-			<text xml:space="preserve" bytes="8677">
+			<text xml:space="preserve" bytes="8670">
 			
 
 {{Infobox person
 | name        = ఎ. కె. హంగల్
 | image       = A_K_Hangal_at_14th_Hira_Manik_Awards.jpg
-| birth_date     = {{Birth date and age|1914|02|01}}
+| birth_date     = {{Birth date|1914|02|01}}
 | death_date     = {{Death date and age|2012|08|26|1914|02|01}}
 | death_place    = ముంబై, మహారాష్ట్ర, ఇండియా
 | occupation     = నటుడు
@@ -248,7 +248,7 @@
 ==మూలాలు==
 &lt;references /&gt;
 
-[[వర్గం:తెవికీ పద్మ పురస్కారాలు]][[వర్గం:తెవికీ పద్మశ్రీ జాబితా]]
+[[వర్గం:తెవికీ పద్మ పురస్కారాలు]][[వర్గం:తెవికీ పద్మభూషణ్ జాబితా]]
 			</text>
 			<sha1>d1r039ba39usr8ahcajb5gfofwju0od</sha1>
 		</revision>
@@ -264,7 +264,7 @@
 		<id>1000003</id>
 		<revision>
 			<id>1000003</id>
-			<timestamp>2022-05-11T19-44-57Z</timestamp>
+			<timestamp>2022-05-11T19-56-42Z</timestamp>
 			<contributor>
 				<username>Yallamahanth</username>
 				<id>18852</id>
@@ -272,13 +272,13 @@
 			<comment>xmlpage created</comment>
 			<model>wikitext</model>
 			<format>text/x-wiki</format>
-			<text xml:space="preserve" bytes="8167">
+			<text xml:space="preserve" bytes="8159">
 			
 
 {{Infobox person
 | name        = ఎ. కె. రామానుజన్
 | image       = A.K.RamanujanPic.jpg
-| birth_date     = {{Birth date and age|1929|03|16}}
+| birth_date     = {{Birth date|1929|03|16}}
 | birth_place    = మైసూర్, ప్రిన్సెస్ స్టేట్ ఆఫ్ మైసూర్, బ్రిటిష్ ఇండియా
 | death_date     = {{Death date and age|1993|07|13|1929|03|16}}
 | death_place    = చికాగో, ఇల్లినోయిస్, యునైటెడ్ స్టేట్స్
@@ -381,7 +381,7 @@
 		<id>1000004</id>
 		<revision>
 			<id>1000004</id>
-			<timestamp>2022-05-11T19-44-57Z</timestamp>
+			<timestamp>2022-05-11T19-56-42Z</timestamp>
 			<contributor>
 				<username>Yallamahanth</username>
 				<id>18852</id>
