@@ -1,10 +1,11 @@
 
-
 {%- macro body_gen(body,Summary_Telugu,colName_tel) -%}
 {%- if Summary_Telugu != 'NaN' %}
-{{'\n'}}{{Summary_Telugu}}
+{{'\n'}}{{Summary_Telugu}}{{"<ref>{{Cite web|url="}}{{WikiLink}}{{"|title="}}{{Recipients}}{{" - wikipedia |website=wikipedia.org |language=en |access-date=2022-05-05}}</ref>"}}
 {%- for k,v in body.items() %}
 {%- if v != 'NaN' %}{{'\n\n'}}=={%- for k2,v2 in colName_tel.items() %}{%- if k2+'_Telugu' == k %}{{v2}}{%- endif %}{% endfor %}=={{'\n\n'}}{{v}}{%- endif %}{% endfor %}
+{%- if WikiLink != 'NaN' %}
+{%- endif %}
 {%- endif %}
 {%- endmacro -%}
 
@@ -14,7 +15,54 @@
 {%- for k,v in ref_dict.items() %}
 {%- if v != 'NaN' %}{{'\n'}}[{{k}} {{v}}]{%- endif %}{% endfor %}
 {%- endif %}
+{{'\n'}}==మూలాలు=={{'\n'}}<references />{{"\n"}}
 {%- endmacro -%}
 
+{%- macro infobox_macro(Recipients_Telugu,image,Birth_Date,Place_of_Birth,Death_Date,Place_of_Death,Nationality,Institutions,Alma_mater,Spouse,Other_Awards_including_Padma) -%}
+{%- if image != 'NaN' or Birth_Date != 'NaN' or Place_of_Birth != 'NaN' or Death_Date != 'NaN' or Place_of_Death != 'NaN' or Nationality != 'NaN' or Institutions != 'NaN' or Alma_mater != 'NaN' or Spouse != 'NaN'or Other_Awards_including_Padma != 'NaN' %}
+{{'{{Infobox person'}}
+| name               = {{Recipients_Telugu}}
+{%- if image != 'NaN' %}
+| image              = {{image}}
+{%- endif %}
+{%- if Birth_Date != 'NaN' %}
+| birth_date         = {{'{{Birth date and age|'}}{{Birth_Date.split('-')[0]}}{{'|'}}{{Birth_Date.split('-')[1]}}{{'|'}}{{Birth_Date.split('-')[2]}}{{'}}'}}
+{%- endif %}
+{%- if Place_of_Birth_Tel != 'NaN' %}
+| birth_place        = {{Place_of_Birth_Tel}}
+{%- endif %}
+{%- if Death_Date != 'NaN' %}
+| death_date         = {{'{{Death date and age|'}}{{Death_Date.split('-')[0]}}{{'|'}}{{Death_Date.split('-')[1]}}{{'|'}}{{Death_Date.split('-')[2]}}{{'|'}}{{Birth_Date.split('-')[0]}}{{'|'}}{{Birth_Date.split('-')[1]}}{{'|'}}{{Birth_Date.split('-')[2]}}{{'}}'}}
+{%- endif %}
+{%- if Place_of_Death_Tel != 'NaN' %}
+| death_place        = {{Place_of_Death_Tel}}
+{%- endif %}
+{%- if Nationality_Tel != 'NaN' %}
+| nationality        = {{Nationality_Tel}}
+{%- endif %}
+{%- if Institutions_Tel != 'NaN' %}
+| education          = {{Institutions_Tel}}
+{%- endif %}
+{%- if Alma_mater_Tel != 'NaN' %}
+| alma_mater         = {{Alma_mater_Tel}}
+{%- endif %}
+{%- if Occupation_Tel != 'NaN' %}
+| occupation         = {{Occupation_Tel}}
+{%- endif %}
+{%- if Spouse_Tel != 'NaN' %}
+| spouse             = {{Spouse_Tel}}
+{%- endif %}
+{%- if Other_Awards_including_Padma_Tel != 'NaN' %}
+| awards             = {{Other_Awards_including_Padma_Tel}}
+{%- endif %}
+{{'}}'}}
+{%- endif %}
+{%- endmacro -%}
+
+{{- infobox_macro(Recipients_Telugu,image,Birth_Date,Place_of_Birth,Death_Date,Place_of_Death,Nationality,Institutions,Alma_mater,Spouse,Other_Awards_including_Padma) }}
 {{- body_gen(body,Summary_Telugu,colName_tel) }}
 {{- ref_gen(ref_dict,ref) }}
+[[వర్గం:తెవికీ పద్మ పురస్కారాలు]]
+{%- if Padma_Shri_Year != 'NaN' %}[[వర్గం:తెవికీ పద్మశ్రీ జాబితా]]{%- endif %}
+{%- if Padma_Bhushan_Year != 'NaN' %}[[వర్గం:తెవికీ పద్మశ్రీ జాబితా]]{%- endif %}
+{%- if Padma_Vibhushan_Year != 'NaN' %}[[వర్గం:తెవికీ పద్మభూషణ్ జాబితా]]{%- endif %}
