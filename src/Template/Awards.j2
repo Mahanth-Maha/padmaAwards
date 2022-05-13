@@ -6,6 +6,8 @@
 {%- if v != 'NaN' %}{{'\n\n'}}=={%- for k2,v2 in colName_tel.items() %}{%- if k2+'_Telugu' == k %}{{v2}}{%- endif %}{% endfor %}=={{'\n\n'}}{{v}}{%- endif %}{% endfor %}
 {%- if WikiLink != 'NaN' %}
 {%- endif %}
+{%- else %}
+{{"'''"}}{{Recipients_Telugu}}{{"'''"}} {%- if Birth_Date != 'NaN' %}{{'('}}{{Birth_Date}}{{')'}}{%- endif %} {%- if Occupation_Tel != 'NaN' %} ఒక {{Occupation_Tel}}{%- endif %}, {%- if Padma_Shri_Year != 'NaN' %} {{Padma_Shri_Field_Tel}} రంగానికి చేసిన సేవలకు గాను {{Padma_Shri_Year}}లో భారత ప్రభుత్వం {{Padma_Shri_Awarded_By_Tel}} ద్వారా నాల్గవ అత్యున్నత భారతీయ పౌర పురస్కారం పద్మశ్రీని ప్రదానం చేసింది. {%- endif %}{%- if Padma_Bhushan_Year != 'NaN' %}{{Padma_Bhushan_Field_Tel}} రంగానికి చేసిన సేవలకు గాను {{Padma_Bhushan_Year}}లో భారత ప్రభుత్వం {{Padma_Bhushan_Awarded_By_Tel}} ద్వారా మూడవ అత్యున్నత పౌర పురస్కారమైన పద్మభూషణ్ను ప్రదానం చేసింది. {%- endif %}{%- if Padma_Vibhushan_Year != 'NaN' %} {{Padma_Bhushan_Field_Tel}} రంగానికి చేసిన సేవలకు గాను {{Padma_Bhushan_Year}}లో భారత ప్రభుత్వం {{Padma_Bhushan_Awarded_By_Tel}} ద్వారా రెండవ అత్యున్నత పౌర పురస్కారం పద్మ విభూషణ్ను ప్రదానం చేసింది. {%- endif %}
 {%- endif %}
 {%- endmacro -%}
 
@@ -58,6 +60,8 @@
 {%- endif %}
 {%- if Other_Awards_including_Padma_Tel != 'NaN' %}
 | awards             = {{Other_Awards_including_Padma_Tel}}
+{%- else %}
+| awards             = {{}}
 {%- endif %}
 {{'}}'}}
 {%- endif %}
