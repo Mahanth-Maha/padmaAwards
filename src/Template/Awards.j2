@@ -12,7 +12,7 @@
 {%- endmacro -%}
 
 {%- macro ref_gen(ref_dict,ref) -%}
-{%- if ref != 'NaN' and Summary_Telugu == 'NaN' %}
+{%- if ref != 'NaN' and Summary_Telugu != 'NaN' %}
 {{'\n'}}==బాహ్య లింకులు==
 {%- for k,v in ref_dict.items() %}
 {%- if v != 'NaN' %}{{'\n'}}[{{k}} {{v}}]{%- endif %}{% endfor %}
